@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WEBSITE - PUTRI</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            color: rgb(14, 13, 13);
+        }
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 10px 20px;
+            background-color: #966907;
+        }
+        .title {
+            flex-grow: 1;
+        }
+        nav a {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            padding: 30px;
+            display: inline-block;
+            color: rgb(0, 0, 0);
+            font-size: 30px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s ease;
+        }
+        nav a:hover {
+            background-color: #fffff;
+            border-radius: 5px;
+        }
+        ul {
+            list-style-type: none;
+            display: flex;
+            margin: 0;
+            padding-left: 10px;
+        }
+        li {
+            margin-left: 15px;
+        }
+        .header {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            background-color: #d39309;
+        }
+        .right-content {
+            text-align: center;
+        }
+        .center-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+            max-width: 2000px;
+            margin: auto;
+        }
+        .hero-image, .hero-image2, .wrapper-image, .wrapper-image2 {
+            width: 400px;
+            height: auto;
+            margin: 20px;
+        }
+        h3, h5, p {
+            color: rgb(0, 0, 0);
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            font-size: 30px;
+            padding: 10px;
+        }
+        footer {
+            background-color: #966907;
+            padding: 30px;
+            color: rgb(0, 0, 0);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="nav__logo">
+            <img alt="Universitas Logo" height="50" src="upb.png">
+        </div>
+        <div class="title">
+            <a href="#">PUTRI RIZKY PRATIWI</a>
+        </div>
+        <ul class="ul">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#" class="inactive">About</a></li>
+            <li><a href="#" class="inactive">News</a></li>
+            <li><a href="#" class="inactive">Contact</a></li>
+        </ul>
+    </nav>
+    <header class="header">
+        <div class="right-content">
+            <img src="putri.jpg" alt="Foto" class="profile-image"> 
+            <h1 class="name">PUTRI RIZKY PRATIWI</h1>
+            <h2 class="name2">312310554</h2>
+        </div>
+    </header>
+
+    <section id="hero" class="center-content">
+        <img src="Muhammad.jpeg" alt="Putri" class="hero-image">
+        <div class="hero-content">
+            <h3>
+                <p>Islam adalah agama monoteistik yang meyakini bahwa hanya ada satu Tuhan, Allah, dan Nabi Muhammad adalah utusan-Nya. Islam memiliki lima rukun utama yang menjadi dasar keimanan dan praktiknya:</p>
+                <ul>
+                    <li><strong>Syahadat</strong> : Pernyataan iman bahwa "Tidak ada Tuhan selain Allah, dan Muhammad adalah utusan Allah."</li>
+                    <li><strong>Shalat</strong> : Ibadah wajib lima kali sehari sebagai bentuk ketaatan dan komunikasi dengan Allah.</li>
+                    <li><strong>Zakat</strong> : Kewajiban memberikan sebagian harta kepada yang membutuhkan sebagai bentuk kepedulian sosial.</li>
+                    <li><strong>Puasa</strong> : Berpuasa di bulan Ramadan sebagai bentuk pengendalian diri dan ibadah.</li>
+                    <li><strong>Haji</strong> : Ibadah ke Tanah Suci Makkah bagi yang mampu, minimal sekali seumur hidup.</li>
+                </ul>
+            </h3>
+        </div> 
+        <img src="Allah.jpeg" alt="delamifc" class="hero-image2">
+    </section>
+
+    <section id="wrapper" class="center-content">
+        <img src="islam.jpeg" alt="Putri" class="wrapper-image2">
+        <div class="wrapper-content">
+            <h5>
+                <p>Islam juga mengajarkan akhlak mulia, keadilan, kasih sayang, dan kehidupan sosial yang harmonis. Sumber utama ajaran Islam adalah Al-Qur’an dan Hadis (perkataan dan perbuatan Nabi Muhammad).</p>
+                <p>Ada aspek lain seperti iman kepada takdir, kehidupan setelah mati, dan hukum Islam (syariat) yang mengatur berbagai aspek kehidupan, termasuk ibadah, muamalah (hubungan sosial), dan hukum pidana Islam.</p>
+                <p><strong>KESIMPULAN</strong></p>
+                <p>Islam memiliki lima rukun utama: Syahadat (pengakuan iman), Shalat (ibadah wajib lima waktu), Zakat (kewajiban berbagi harta), Puasa (di bulan Ramadan), dan Haji (ziarah ke Makkah bagi yang mampu).</p>
+                <p>Sumber utama ajaran Islam adalah Al-Qur’an dan Hadis. Islam juga menekankan akhlak mulia, keadilan, serta hukum syariat yang mengatur berbagai aspek kehidupan. Keimanan dalam Islam mencakup keyakinan kepada Allah, kitab-kitab-Nya, malaikat, rasul, hari kiamat, dan takdir.</p>
+            </h5>
+        </div>
+    </section>
+
+    <footer>
+        <p>@312310554 Putri Rizky Pratiwi TI23CA1</p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('.inactive').forEach(item => {
+            item.addEventListener('click', function(event) {
+                event.preventDefault();
+                alert("Mohon Maaf Menu pada website PUTRI RIZKY PRATIWI Tidak Aktif");
+            });
+        });
+    </script>
+</body>
+</html>
